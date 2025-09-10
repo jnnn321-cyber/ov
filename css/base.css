@@ -1,0 +1,157 @@
+@charset "utf-8";
+@import "../font/font/pretendardvariable.css";
+
+/* 태그 리셋 스타일 */
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+.material-icons {
+    color: #999;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Pretendard Variable', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #222222;
+    letter-spacing: -0.3px;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    /* background-color: #ddd; */
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+select,
+option,
+textarea {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: "Pretendard Variable" !important;
+}
+
+input {
+    border: 1px solid #dddddd;
+}
+textarea:focus {
+    border-color: #0065EA;
+    outline: none;
+}
+input:focus {
+    border-color: #0065EA;
+    outline: none;
+}
+
+input:disabled {
+    color: #999;
+}
+input[type="date"]{
+    cursor: pointer;
+}
+input[type="time"]{
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button{ display: none; }
+
+/* input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+} */
+
+/* input[type="date"]{
+    display: flex;
+}
+input[type="date"]::before{
+    content: attr(data-placeholder);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before{
+    display: none;
+}
+
+input[data-placeholder]::before{
+    color: #999;
+    font-size: 10px;
+    font-family: "Pretendard" !important;
+} */
+
+
+
+select:focus {
+    border-color: #0065EA;
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+/* .select {
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */
+
+
+
+
+/* -------------------------------------- */

@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* s. 사이드 메뉴 */
+.side-menu{
+    background-color: #f7f7f7;
+    width: 210px;
+    height: auto;
+    min-height: 100vh;
+    padding: 0 8px 12px;
+}
+.side-menu .logo{
+    height: 80px;
+    font-family: "montserrat";
+    padding: 0 24px;
+    font-weight: 600;
+    color: #222;
+    font-size: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.side-menu .main-menu{}
+.side-menu .main-menu .side00{}
+.side-menu .main-menu .side00 .side01-title,.side02-title{
+    color: #222;
+    font-size: 14px;
+    padding: 16px 24px;
+    font-weight: 600;
+}
+.side-menu .main-menu .side00 ul{}
+.side-menu .main-menu .side00 ul li{
+    margin-bottom: 8px;
+}
+
+.side-menu .main-menu .side00 ul li a{
+    color: #999;
+    font-size: 16px;
+    display: block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.side-menu .main-menu .side00 ul li a:hover{
+    background-color: #e7e7e7;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.side-menu .main-menu .side00 ul li a .menu-in{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.side-menu .main-menu .side00 ul li a .menu-in .material-icons{
+    font-size: 20px;
+}
+.side-menu .main-menu .side00 ul li a .menu-in .side-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.side-menu .main-menu .side00 ul li a .menu-in.notification .side-text::after{
+    content: " ";
+    display: block;
+    margin-top: 1px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #1AD54C;
+}
+
+.side-menu .main-menu .side00 ul li.now a{
+    color: #fff;
+    background-color: #0065EA;
+}
+.side-menu .main-menu .side00 ul li.now a .menu-in .material-icons{
+    color: #fff;
+}
+/* e. 사이드 메뉴 */
+
+/* s. 헤더 */
+.right-part{
+    width: calc(100% - 210px);
+}
+.right-part .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    min-width: 400px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 40px;
+}
+.right-part .header .group-name{
+    font-size: 24px;
+    font-weight: 600;
+}
+.right-part .header .header-right{}
+.right-part .header .header-right a{
+    display: block;
+    color: #222;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+}
+.right-part .header .header-right a:hover{
+    background-color: #f7f7f7;
+    transition: 0.2s ease-in-out;
+}
+.right-part .header .header-right a .right-in{
+    display: flex;
+    gap: 8px;
+
+}
+.right-part .header .header-right a .right-in .material-icons{
+    font-size: 20px;
+    color: #222;
+}
+.right-part .header .header-right a .right-in div{}
+/* e. 헤더 */

@@ -1,0 +1,1386 @@
+@charset "utf-8";
+
+.wrap {
+    position: relative;
+    display: flex;
+}
+
+/* s. 관제카메라 monitoring-cam */
+.right-part .menu-page {
+    padding: 0 40px 32px;
+}
+
+/* ------ 알림현황 본문 패딩 스타일 ------ */
+.right-part .menu-page.notification {
+    padding: 0px 0px 0px;
+}
+
+.right-part .menu-page .menu-page-in {}
+
+.right-part .menu-page .menu-page-in .page-title {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 32px;
+    margin-bottom: 32px;
+}
+
+
+/* ------ 알림현황 타이틀 스타일 ------ */
+.right-part .menu-page .notification-in .notification-left > .page-title{
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 32px;
+    margin-bottom: 32px;
+}
+/* ------ 알림현황 타이틀 스타일 ------ */
+
+
+.right-part .menu-page .menu-page-in .menu-page-content {
+    display: flex;
+    gap: 8px;
+}
+.right-part .menu-page .menu-page-in .menu-page-content.monitor-cam-content{
+    min-width: 750px;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list {
+    /* min-width: 260px; */
+    width: calc(25% - 6px);
+}
+
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a {
+    color: #222;
+}
+
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a .list-in {
+    position: relative;
+}
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a .list-in .cam-type-tag{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: rgba(0, 82, 158, 0.8);
+    padding: 3px 4px;
+    border-radius: 3px;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a .list-in .cam-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a .list-in .cam-video iframe,
+embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ytp-large-play-button{
+    display: none;
+}
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a .list-in .cam-info {
+    padding: 0 3px;
+}
+
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a .list-in .cam-info .cam-name {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 2px;
+}
+
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a .list-in .cam-info .cam-info-main .cam-data {
+    display: flex;
+    gap: 8px;
+    font-weight: 400;
+}
+
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a .list-in .cam-info .cam-info-main .cam-data .collect-count {
+    margin-bottom: 6px;
+}
+
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a .list-in .cam-info .cam-info-main .cam-data .collect-count::after {
+    content: "/";
+    margin-left: 4px;
+}
+
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a .list-in .cam-info .cam-info-main .cam-data .device-count {}
+
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a .list-in .cam-info .cam-info-main .cam-data div span.num {
+    font-weight: 700;
+}
+
+.right-part .menu-page .menu-page-in .menu-page-content .cam-list a .list-in .cam-info .network-state span {
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: #1AD54C;
+}
+
+/* e. 관제카메라 monitoring-cam */
+
+/* ----------------------------- */
+
+/* s. 관제카메라 monitoring-cam-sub */
+.menu-page .menu-page-in .monitor-cam-sub-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-page .menu-page-in .page-title .cam-name {
+    margin-right: 20px;
+}
+
+.menu-page .menu-page-in .page-title .cam-info {
+    display: flex;
+    gap: 12px;
+}
+
+.menu-page .menu-page-in .page-title .cam-info>div {
+    display: flex;
+    gap: 2px;
+}
+
+.menu-page .menu-page-in .page-title .cam-info>div .material-icons {
+    font-size: 20px;
+}
+
+.menu-page .menu-page-in .page-title .cam-info>div div {
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+.right-part .menu-page .menu-page-in .menu-page-content.monitor-cam-sub-content {
+    display: flex;
+    gap: 32px;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-left {
+    width: 70%;
+    /* min-width: 550px; */
+    min-width: 518px;
+}
+
+.menu-page .menu-page-in .menu-page-content .main-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.menu-page .menu-page-in .menu-page-content .main-video iframe,
+embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-page .menu-page-in .menu-page-content .link-device {}
+
+.menu-page .menu-page-in .menu-page-content .link-device .title {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    row-gap: 8px;
+}
+
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list.on{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px 24px;
+    width: calc(33.33% - 5px);
+}
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list.off{
+    background-color: #f7f7f7;
+    border: none;
+    padding: 20px 24px;
+    box-sizing: border-box;
+    width: calc(33.33% - 5px);
+    color: #999;
+}
+
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .device-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .device-info {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .device-info .time {}
+
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .device-info .capacity {}
+
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .device-info .capacity .now-capacity {
+    font-weight: 700;
+}
+
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .device-info .state {}
+
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .device-info>div .index {
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .control{
+    display: flex;
+    gap: 8px;
+    font-weight: 400;
+}
+
+/* s. 오션캔 on-off 토글버튼 디자인 */
+
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .control .toggleSwitch{
+    position: relative;
+    cursor: pointer;
+    width: 44px;
+    height: 24px;
+    background-color: #999; 
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+}
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .control .toggleSwitch .toggleButton{
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .control .toggleSwitch .can-toggle{
+}
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .control .toggleSwitch .can-toggle:checked + .toggleButton{
+    left: calc(100% - 22px); background: #fff;
+}
+.menu-page .menu-page-in .menu-page-content .link-device .link-device-in .device-list .control .toggleSwitch, .toggleButton{
+    transition: all 0.2s ease-in;
+}
+
+/* e. 오션캔 on-off 토글버튼 디자인 */
+
+
+.menu-page .menu-page-in .menu-page-content .cam-sub-right{
+    width: 30%;
+    min-width: 320px;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current{}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .title{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 0 20px 0;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .collect-current-in{
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .collect-current-in .collect-current-card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 16px 24px 20px;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .collect-current-in .collect-current-card .amount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .collect-current-in .collect-current-card .amount .amount-info{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .collect-current-in .collect-current-card .amount .amount-info .num{
+    font-size: 40px;
+    font-weight: 700;
+    color: #DA0A0A;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .collect-current-in .collect-current-card .state{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .collect-current-in .collect-current-card .state .state-info{
+    font-size: 20px;
+    font-weight: 700;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .collect-current-in .collect-current-card .type{}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .collect-current-in .collect-current-card .type ul{
+    text-align: center;
+    display: flex;
+    gap: 4px;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .collect-current-in .collect-current-card .type ul li{
+    width: 25%;
+    background-color: #f7f7f7;
+    padding: 16px 4px 12px;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .collect-current-in .collect-current-card .type ul li .rate{
+    font-size: 30px;
+    font-weight: 600;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .collect-current .collect-current-in .collect-current-card .type ul li div:last-child{
+    font-size: 12px;
+}
+
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current{}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .title{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 32px 0 20px;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .work-current-in{}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .work-current-in .work-current-card{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px 24px 4px;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .work-current-in .work-current-card .today{
+    font-weight: 600;
+    font-size: 16px;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .work-current-in .work-current-card .work-list{}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .work-current-in .work-current-card .work-list ul{}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .work-current-in .work-current-card .work-list ul li{
+    display: flex;
+    gap: 4px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .work-current-in .work-current-card .work-list ul li .list{}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .work-current-in .work-current-card .work-list ul li .list .time{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .work-current-in .work-current-card .work-list ul li .list .person{
+    font-weight: 400;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .work-current-in .work-current-card .work-list ul li .work-req-btn{}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .work-current-in .work-current-card .work-list ul li .work-req-btn button{
+    display: block;
+    background-color: #fff;
+    padding: 8px 8px 9px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    color: #222;
+    transition: 0.2s;
+    text-align: center;
+}
+.menu-page .menu-page-in .menu-page-content .cam-sub-right .work-current .work-current-in .work-current-card .work-list ul li .work-req-btn button:hover{
+    background-color: #222;
+    color: #fff;
+    transition: 0.2s;
+}
+/* e. 관제카메라 monitoring-cam-sub */
+/* ------------------------------------------------------ */
+
+/* s. 알림현황 notification */
+.menu-page .notification-in{
+    display: flex;
+    /* width: calc(100vw - 210px); */
+}
+.menu-page .notification-in .notification-left{
+    width: 20%;
+    min-width: 195px;
+}
+.menu-page .notification-in .notification-left .notification-tab{}
+.menu-page .notification-in .notification-left .notification-tab ul{}
+.menu-page .notification-in .notification-left .notification-tab ul li{
+    background-color: #fff;
+    padding: 24px 40px;
+    color: #999;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+.menu-page .notification-in .notification-left .notification-tab ul li:last-child{
+    border-bottom: 1px solid #ddd;
+}
+.menu-page .notification-in .notification-left .notification-tab ul li.on{
+    background-color: #f7f7f7;
+    color: #222;
+}
+.menu-page .notification-in .notification-left .notification-tab ul li.work-require{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.menu-page .notification-in .notification-left .notification-tab ul li.work-require .count{
+    color: #0065EA;
+    font-weight: 600;
+    font-size: 16px;
+}
+.menu-page .notification-in .notification-left .notification-tab ul li .tab{
+    font-size: 18px;
+}
+
+
+.menu-page .notification-in .notification-right{
+    width: 80%;
+    min-width: 550px;
+    background-color: #f7f7f7;
+    height: calc(100vh - 80px);
+    padding-bottom: 20px;
+    overflow: auto;
+}
+.menu-page .notification-in .notification-right::-webkit-scrollbar{
+    width: 10px;
+}
+.menu-page .notification-in .notification-right::-webkit-scrollbar-thumb{
+    background-color: #999;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+.menu-page .notification-in .notification-right::-webkit-scrollbar-track{
+}
+
+.menu-page .notification-in .notification-right .today-noti{
+    padding: 20px 24px 0px;
+}
+.menu-page .notification-in .notification-right .today-noti .title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.menu-page .notification-in .notification-right .today-noti .noti-list{}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul li{
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: end;
+    padding: 16px 20px;;
+}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul li .noti-flex-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul li .noti-flex-wrap .line1{
+    margin-bottom: 4px;
+}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul li .noti-flex-wrap .line1 .for-device.un{
+    color: #DA0A0A;
+}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul li .noti-flex-wrap .sort{
+    font-size: 12px;
+    color: #999;
+}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul li .noti-flex-wrap > div{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul li .noti-flex-wrap > div .from{
+    display: flex;
+    gap: 4px;
+}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul li .noti-flex-wrap .line1 .noti-subject{
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul li .confirm-btn{}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul li .confirm-btn button{
+    background-color: #0065EA;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    min-width: 126px;
+}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul li .confirm-btn button.done{
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    color: #999;
+    cursor: unset;
+}
+.menu-page .notification-in .notification-right .today-noti .noti-list ul li .confirm-btn button.confirm:hover{
+    background-color: #2785FF;
+}
+
+
+/* e. 알림현황 notification */
+
+
+/* ------------------------------------------------------ */
+/* s. 구군, 사용자, 카메라, 장치 관리 공통 */
+
+.menu-page .menu-page-in .title-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-page .menu-page-in .title-wrap .page-title{}
+.menu-page .menu-page-in .title-wrap .setting-search{}
+.menu-page .menu-page-in .setting-content{}
+.menu-page .menu-page-in .setting-content .add-btn{
+    display: flex;
+    justify-content: end;
+}
+
+
+/* 생성 등록 버튼 디자인 */
+.add-btn > button{
+    margin-top: 24px;
+    background-color: #0065EA;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: 0.2s;
+    font-family: "pretendard";
+}
+.add-btn.work-add-btn > button{
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.add-btn > button > .material-icons{
+    color: #fff;
+    font-size: 20px;
+}
+.add-btn > button:hover{
+    background-color: #2785FF;
+}
+
+
+/* 검색 입력창, 버튼 디자인 */
+.setting-search{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+}
+.setting-search .table-search{
+    height: 37px;
+    padding: 0 12px;
+    width: 300px;
+}
+.search-btn{
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 10px 18px;
+    transition: 0.2s;
+    font-family: "Pretendard";
+}
+.search-btn:hover{
+    background-color: #222;
+    color: #fff;
+}
+
+
+/* 설정 관리 표 디자인 */
+.data-table-wrap{
+    overflow: auto;
+    width: 100%;
+}
+.data-table-wrap .data-table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    white-space: nowrap; 
+}
+.data-table-wrap .data-table thead{
+    background-color: #444;
+    color: #fff;
+}
+.data-table-wrap .data-table thead tr{
+}
+.data-table-wrap .data-table thead tr th{
+    padding: 10px;
+    font-weight: 500;
+}
+.data-table-wrap .data-table thead tr th.table-more-btn{
+    width: 88px;
+}
+
+.data-table-wrap .data-table tbody{
+    font-weight: 400;
+}
+.data-table-wrap .data-table tbody tr{
+    border-bottom: 1px solid #ddd;
+    transition: 0.2s;
+}
+.data-table-wrap .data-table tbody tr:hover{
+    background-color: #f7f7f7;
+}
+.data-table-wrap .data-table tbody tr td{
+    padding: 10px;
+}
+.data-table-wrap .data-table tbody tr td > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    gap: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #f7f7f7;
+    transition: 0.2s;
+    font-size: 12px;
+}
+.data-table-wrap .data-table tbody tr:hover td > a{
+    background-color: #444;
+    color: #fff;
+}
+.data-table-wrap .data-table tbody tr td > a .material-icons{
+    font-size: 16px;
+    transition: 0.2s;
+    color: #444;
+}
+.data-table-wrap .data-table tbody tr:hover td > a .material-icons{
+    color: #fff;
+}
+
+/* e. 구군, 사용자, 카메라, 장치 관리 공통 */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+
+/* s. 구군, 사용자, 카메라, 장치, 작업스케쥴 생성/수정 공통 */
+.menu-page .menu-page-in .add-content{
+    height: 100vh;
+    width: 100%;
+}
+.menu-page .menu-page-in .add-content .form-wrap{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 800px;
+}
+.menu-page .menu-page-in .add-content .form-wrap > .form-input input{
+    padding: 10px 12px;
+    width: 100%;
+}
+.menu-page .menu-page-in .add-content .form-wrap > .form-input .label{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.menu-page .menu-page-in .add-content .form-wrap > .camera-type .label{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.menu-page .menu-page-in .add-content .form-wrap > .camera-type form{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.menu-page .menu-page-in .add-content .form-wrap > .camera-type form > div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-dropdown .select{
+    width: 800px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    appearance: base-select;
+    border-radius: 0;
+    transition: 0.3s;
+    &::picker-icon{
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-top: 2px solid #222;
+        border-right: 2px solid #222;
+        rotate: 135deg;
+        margin-right: 5px;
+        margin-top: 4px;
+    }
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-dropdown .select:disabled{
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+     &::picker-icon{
+        border-top: 2px solid #999;
+        border-right: 2px solid #999;
+    }
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-dropdown .select::picker(select){
+    appearance: base-select;
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-dropdown .label{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-dropdown .select option{
+    padding: 8px 8px;
+    &::checkmark{
+        order: 2;
+    }
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-dropdown .select option:hover{
+    background-color: #eee;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-dropdown .select option:checked{
+    background-color: #0065EA;
+    color: #fff;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-flex-wrap{
+    width: 800px;
+    display: flex;
+    gap: 40px;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-flex-wrap.form-flex-column{
+    flex-direction: column;
+    gap: 20px;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-flex-wrap .flex-left,.flex-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-flex-wrap .form-input .label{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-flex-wrap .form-input input{
+    padding: 10px 12px;
+    width: 100%;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-flex-wrap .form-input.half-input input
+{
+    width: 380px;
+}
+
+.menu-page .menu-page-in .add-content .form-wrap .form-flex-wrap .flex-right .half-dropdown .select{
+    width: 100%;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-flex-wrap .device-add-input .serial-check{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 24px;
+    margin-top: 12px;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-flex-wrap .device-add-input .serial-check button{
+    border: 1px solid #999;
+    padding: 8px 20px;
+    border-radius: 8px;
+    float: right;
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-flex-wrap .device-add-input .serial-check::before{
+    content:'오션캔 60L 인증완료';
+}
+.menu-page .menu-page-in .add-content .form-wrap .form-flex-wrap .device-add-input .serial-check.done::before{
+    content:'오션캔 60L 인증완료';
+    color: #999;
+}
+
+/* s. 작업 스케쥴 생성 input */
+.menu-page .menu-page-in .add-content .schedule-input .label{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.menu-page .menu-page-in .add-content .schedule-input .work-schedule{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.menu-page .menu-page-in .add-content .schedule-input .work-schedule > div{
+    display: flex;
+    gap: 10px;
+}
+.menu-page .menu-page-in .add-content .schedule-input .work-schedule input{
+    padding: 0px 12px;
+    width: 188px;
+}
+
+/* e. 작업 스케쥴 생성 input */
+
+.menu-page .menu-page-in .add-content .form-btn{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+.menu-page .menu-page-in .add-content .form-btn .cancel,.go-list{
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+.menu-page .menu-page-in .add-content .form-btn .save,.edited{
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #222;
+    color: #fff;
+    transition: 0.2s;
+}
+.menu-page .menu-page-in .add-content .form-btn .save:hover{
+    background-color: #444444;
+}
+.menu-page .menu-page-in .add-content .delete button{
+    display: flex;
+    align-items: center;
+    color: #999;
+    font-weight: 500;
+    padding: 10px 6px 10px 4px;
+    border-radius: 8px;
+}
+.menu-page .menu-page-in .add-content .delete button:hover .txt{
+    text-decoration: underline;
+}
+
+
+/* e. 구군, 사용자, 카메라, 장치 생성/수정 공통 */
+/* ------------------------------------------------------ */
+
+
+/* ------------------------------------------------------- */
+/* s. 풀캘린더 디자인 공통 */
+/* s. 레포트 report */
+.menu-page .menu-page-in .cal-content .report-cal .header-cal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.menu-page .menu-page-in .cal-content .report-cal .header-cal .year-month{
+    font-size: 20px;
+    letter-spacing: -2.5%;
+    color: #222;
+}
+.menu-page .menu-page-in .cal-content .report-cal .header-cal .nav{
+    display: flex;
+    gap: 4px;
+}
+.menu-page .menu-page-in .cal-content .report-cal .header-cal .nav .nav-btn{
+    background-color: #fff;
+    border: 1px solid #aaa;  
+    border-radius: 4px;
+    padding: 0px 2px;
+}
+.menu-page .menu-page-in .cal-content .report-cal .header-cal .nav .nav-btn .material-icons{
+    color: #222;
+}
+.menu-page .menu-page-in .cal-content .report-cal .header-cal .nav .nav-btn > span{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 25px;
+    font-size: 20px;
+}
+.menu-page .menu-page-in .cal-content .report-cal .header-cal .nav .nav-btn.go-today{
+    padding: 0px 12px;
+    line-height: 1;
+    font-size: 12px;
+    color: #222;
+}
+.menu-page .menu-page-in .cal-content .report-cal .main .days{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.menu-page .menu-page-in .cal-content .report-cal .main .days .day{
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 8px 4px;
+    border-left: 1px solid #ddd;
+}
+.menu-page .menu-page-in .cal-content .report-cal .main .dates{
+    display: flex;
+    flex-flow: row wrap;
+    /* height: 500px; */
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.menu-page .menu-page-in .cal-content .report-cal .main .dates .date{
+    width: calc(100% / 7);
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    padding: 6px 8px;
+    min-height: 160px;
+}
+.menu-page .menu-page-in .cal-content .report-cal .main .dates .date.today{
+    color: #0065EA;
+    background-color: #f7f7f7;
+}
+.menu-page .menu-page-in .cal-content .report-cal .main .dates .date .other{
+    color: #999;
+}
+.menu-page .menu-page-in .cal-content .report-cal .main .dates .date .event-list .event:not(:empty){
+    background-color: #DDEFFF;
+    width: 100%;
+    /* display: block; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 11px;
+    color: #0065EA;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-top: 3px;
+}
+.menu-page .menu-page-in .cal-content .report-cal .main .dates .date .event-list .event:not(:empty):hover{
+    text-decoration: underline;
+}
+
+/* e. 레포트 report */
+/* e. 풀캘린더 디자인 공통 */
+/* -------------------------------------------- */
+/* s. 레포트서브 report-sub */
+.menu-page .menu-page-in .report-sub-content .report-sub-in .report-sub-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.menu-page .menu-page-in .report-sub-content .report-sub-in .report-sub-header .header-left{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.menu-page .menu-page-in .report-sub-content .report-sub-in .report-sub-header .header-left .today-view{
+    font-size: 20px;
+    padding-right: 12px;
+    font-weight: 700;
+}
+.menu-page .menu-page-in .report-sub-content .report-sub-in .report-sub-header .header-left .report-cam{
+    font-size: 16px;
+}
+.menu-page .menu-page-in .report-sub-content .report-sub-in .report-sub-header .header-left button span{
+    color: #222;
+    line-height: 30px;
+}
+.menu-page .menu-page-in .report-sub-content .report-sub-in .report-sub-header .header-right{}
+.menu-page .menu-page-in .report-sub-content .report-sub-in .report-sub-header .header-right button{
+    padding: 10px 12px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* e. 레포트서브 report-sub */
+
+
+
+
+/* s. 작업 스케쥴 work */
+.menu-page .menu-page-in .cal-content.work-content{
+    gap: 32px;
+}
+.menu-page .menu-page-in .cal-content .work-cal{
+    min-width: 300px;
+    width: 35%;
+}
+.menu-page .menu-page-in .cal-content .work-cal .header-cal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.menu-page .menu-page-in .cal-content .work-cal .header-cal .year-month{
+    font-size: 20px;
+    letter-spacing: -2.5%;
+    color: #222;
+}
+.menu-page .menu-page-in .cal-content .work-cal .header-cal .nav{
+    display: flex;
+    gap: 4px;
+}
+.menu-page .menu-page-in .cal-content .work-cal .header-cal .nav .nav-btn{
+    background-color: #fff;
+    border: 1px solid #aaa;  
+    border-radius: 4px;
+    padding: 0px 2px;
+}
+.menu-page .menu-page-in .cal-content .work-cal .header-cal .nav .nav-btn .material-icons{
+    color: #222;
+}
+.menu-page .menu-page-in .cal-content .work-cal .header-cal .nav .nav-btn > span{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 25px;
+    font-size: 20px;
+}
+.menu-page .menu-page-in .cal-content .work-cal .header-cal .nav .nav-btn.go-today{
+    padding: 0px 12px;
+    line-height: 1;
+    font-size: 12px;
+    color: #222;
+}
+.menu-page .menu-page-in .cal-content .work-cal .main .days{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.menu-page .menu-page-in .cal-content .work-cal .main .days .day{
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 8px 4px;
+    border-left: 1px solid #ddd;
+}
+.menu-page .menu-page-in .cal-content .work-cal .main .dates{
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.menu-page .menu-page-in .cal-content .work-cal .main .dates .date{
+    width: calc(100% / 7);
+    text-align: center;
+    font-family: "pretendard";
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    padding: 20px 4px;
+    height: 100%;
+    font-weight: 600;
+    font-size: 16px;
+}
+.menu-page .menu-page-in .cal-content .work-cal .main .dates .date.today{
+    color: #0065EA;
+    background-color: #f7f7f7;
+}
+.menu-page .menu-page-in .cal-content .work-cal .main .dates .date.selected{
+    background-color: #0065EA;
+    color: #fff;
+}
+
+.menu-page .menu-page-in .cal-content .work-cal .main .dates .date .other{
+    color: #999;
+}
+
+/* s. 작업스케쥴 work-right --------------------- */
+.menu-page .menu-page-in .cal-content .work-right{
+    width: 100%;
+    min-width: 420px;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-header .today-view{
+    font-size: 20px;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-header .cam-dropdown{
+
+}
+.menu-page .menu-page-in .cal-content .work-right .work-header .cam-dropdown .cam-select{
+    border: 1px solid #ddd;
+    padding: 4px 12px;
+    width: 300px;
+    appearance: base-select;
+    border-radius: unset;
+        &::picker-icon{
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-top: 2px solid #222;
+        border-right: 2px solid #222;
+        rotate: 135deg;
+        margin-right: 5px;
+        margin-top: 4px;
+    }
+}
+.menu-page .menu-page-in .cal-content .work-right .work-header .cam-dropdown .cam-select option:checked{
+    background-color: #0065EA;
+    color: #fff;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-header .cam-dropdown .cam-select:disabled{
+        background-color: #f7f7f7;
+    border: 1px solid #ddd;
+     &::picker-icon{
+        border-top: 2px solid #999;
+        border-right: 2px solid #999;
+    }
+}
+.menu-page .menu-page-in .cal-content .work-right .work-header .cam-dropdown .cam-select::picker(select){
+    appearance: base-select;
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+
+.menu-page .menu-page-in .cal-content .work-right .work-header .cam-dropdown .cam-select option{
+    padding: 4px 8px;
+    &::checkmark{
+        order: 2;
+    }
+}
+.menu-page .menu-page-in .cal-content .work-right .work-header .cam-dropdown .cam-select option:hover{
+    background-color: #eee;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-header .cam-dropdown .cam-select option:checked{
+    background-color: #0065EA;
+    color: #fff;
+}
+
+
+
+.menu-page .menu-page-in .cal-content .work-right .work-list{}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 8px;
+    height: 65vh;
+    overflow-y: auto;
+    box-shadow: inset 0px -22px 28px -36px rgba(0,0,0,0.2);
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in::-webkit-scrollbar{
+    width: 10px;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in::-webkit-scrollbar-thumb{
+    background-color: #999;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in::-webkit-scrollbar-track{
+
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in ul{}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in ul li{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+    padding: 12px 24px;
+    transition: 0.3s;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in ul li:hover{
+    background-color: #f7f7f7;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in ul li:last-child{
+    border-bottom: none;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in ul li .work-info{
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in ul li .work-info .work-time{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in ul li .work-info .detail{
+    font-weight: 400;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in ul li .btn{
+    display: flex; gap: 8px;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in ul li .btn button{
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 6px;
+    color: #222;
+    transition: 0.2s;
+    text-align: center;
+    transition: 0.2s;
+    font-weight: 400;
+    padding: 6px 8px;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in ul li .btn a{
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 6px;
+    color: #222;
+    transition: 0.2s;
+    text-align: center;
+    padding: 6px 8px;
+    transition: 0.2s;
+    font-weight: 400;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in ul li .btn button:hover{
+    background-color: #0065EA;
+    border: 1px solid #0065EA;
+    color: #fff;
+}
+.menu-page .menu-page-in .cal-content .work-right .work-list .list-in ul li .btn a:hover{
+    background-color: #222;
+    border: 1px solid #222;
+    color: #fff;
+}
+/* e. 작업스케쥴 work-right --------------------- */
+/* e. 작업 스케쥴 work */
+/* ------------------------------------ */
+
+
+/* s. 팝업 디자인 */
+.modal-back{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 800;
+}
+.modal{
+    position: fixed;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 900;
+}
+
+.modal.go-list-modal{
+    display: none;
+}
+.modal.verify-modal{
+    display: none;
+}
+.modal.device-check-modal{
+    display: none;
+}
+.modal.work-req-modal{
+    display: none;
+}
+.modal.login-modal{
+    display: none;
+}
+.modal.logout-modal{
+    display: none;
+}
+
+.modal .mo-content{
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 40px 40px 36px;
+}
+.modal .mo-content .modal-title{
+    font-size: 16px; font-weight: 600; margin-bottom: 8px;
+}
+.modal.logout-modal .mo-content .modal-title{
+    margin-bottom: 0px;
+}
+.modal .mo-content .modal-txt{
+}
+body .wrap .modal .modal-btn{
+    width: 100%;
+    display: flex;
+}
+.modal .mo-content .mo-input{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 20px;
+}
+.modal .mo-content .mo-input label{
+    font-weight: 600;
+}
+.modal .mo-content .mo-input input{
+    padding: 10px 12px;
+    margin-bottom: 8px;
+}
+.modal .modal-btn .mo-btn{
+    width: 100%;
+    padding: 20px 24px;
+    border-radius: unset;
+    /* border-top: 1px solid #ddd; */
+    transition: 0.2s;
+}
+.modal .modal-btn .mo-btn.mo-left{
+    background-color: #f7f7f7;
+}
+.modal .modal-btn .mo-btn.mo-left:hover{
+    background-color: #e7e7e7;
+}
+.modal .modal-btn .mo-btn.mo-right{
+    background-color: #0065EA;
+    color: #fff;
+}
+.modal .modal-btn .mo-btn.mo-right:hover{
+    background-color: #2785FF;
+}
+
+.modal.work-req-modal .mo-content .mo-radio{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.modal.work-req-modal .mo-content .mo-radio > div{
+    display: flex;
+    /* gap: 10px; */
+}
+.modal.work-req-modal .mo-content .mo-radio > div input, label{
+    padding-left: 8px;
+    cursor: pointer;
+}
+.modal.work-req-modal .mo-content .mo-radio .req-man{
+    margin-top: 12px;
+}
+.modal.work-req-modal .mo-content .mo-radio .req-man > p:first-child{
+    font-weight: 700; margin-right: 12px;
+}
+.modal.work-req-modal .mo-content .mo-radio .req03-txt{
+    /* display: none; */
+    width: 100%;
+    padding: 10px 12px;
+    height: 140px;
+    background-color: #f7f7f7;
+    resize: none;
+}
+
+
+.modal .modal-close{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+.modal .modal-close span{
+    color: #222;
+    padding: 4px;
+}
+/* e. 팝업 디자인 */
