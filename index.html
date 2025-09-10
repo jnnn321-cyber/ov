@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>오션뷰</title>
+    <title>oceanview-login</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div>오션뷰 퍼블리싱 확인</div>
+    <div class="login-box">
+        <div class="inner">
+            <div>
+                <div class="system-name">Ocean View 관제시스템</div>
+                <div class="login-head">로그인</div>
+            </div>
+            <div class="input-area">
+                <input type="text" placeholder="아이디">
+                <input type="password" placeholder="패스워드">
+            </div>
+            <div class="login-btn">
+                <button type="submit">로그인</button>
+            </div>
+            <div class="copyright">
+                © 2025. BPPO Co., Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+    <!-- s. 로그인 실패 팝업 -->
+    <div class="modal-back"> </div>
+    <div class="modal login-modal">
+        <div class="mo-content">
+            <div class="modal-title">
+                로그인 정보가 일치하지 않습니다.
+            </div>
+            <div class="modal-txt">
+                아이디 / 패스워드를 다시 확인해주세요.
+            </div>
+            <span class="modal-close">
+                <span class="material-icons">
+                    close
+                </span>
+            </span>
+        </div>
+        <div class="modal-btn">
+            <button class="mo-btn mo-right" type="button">
+                확인
+            </button>
+        </div>
+    </div>
+    <!-- e. 로그인 실패 팝업 -->
 </body>
+
 </html>
