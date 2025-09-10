@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>monitor-cam</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- s. 사이드 메뉴 -->
+        <div class="side-menu">
+            <div class="logo">
+                Ocean View<img src="" alt="">
+            </div>
+            <div class="main-menu">
+                <div class="side00 side01">
+                    <div class="side01-title">모니터링</div>
+                    <ul>
+                        <li class="now">
+                            <a href="#">
+                                <div class="menu-in">
+                                    <span class="material-icons">
+                                        desktop_mac
+                                    </span>
+                                    <div class="side-text">관제 카메라</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="menu-in">
+                                    <span class="material-icons">
+                                        calendar_month
+                                    </span>
+                                    <div class="side-text">작업 스케줄</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="menu-in notification">
+                                    <span class="material-icons">
+                                        notifications
+                                    </span>
+                                    <div class="side-text">알림 현황</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="menu-in">
+                                    <span class="material-icons">
+                                        description
+                                    </span>
+                                    <div class="side-text">레포트</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side00 side02">
+                    <div class="side02-title">설정 관리</div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="menu-in">
+                                    <span class="material-icons">
+                                        dashboard_customize
+                                    </span>
+                                    <div class="side-text">구군 관리</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="menu-in">
+                                    <span class="material-icons">
+                                        account_box
+                                    </span>
+                                    <div class="side-text">사용자 관리</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="menu-in">
+                                    <span class="material-icons">
+                                        videocam
+                                    </span>
+                                    <div class="side-text">관제카메라 관리</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="menu-in">
+                                    <span class="material-icons">
+                                        settings
+                                    </span>
+                                    <div class="side-text">장치 관리</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- e. 사이드 메뉴 -->
+
+        <div class="right-part">
+            <!-- s. 헤더 -->
+            <div class="header">
+                <div class="group-name">
+                    구군 이름
+                </div>
+                <div class="header-right">
+                    <a href="#">
+                        <div class="right-in">
+                            <span class="material-icons">
+                                login
+                            </span>
+                            <div>로그아웃</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- e. 헤더 -->
+
+            <!-- s. monitoring-cam -->
+            <div class="menu-page monitor-cam">
+                <div class="menu-page-in monitor-cam-in">
+                    <div class="page-title monitor-cam-title">
+                        관제 카메라
+                    </div>
+                    <div class="menu-page-content monitor-cam-content">
+                        <div class="cam-list">
+                            <a href="">
+                                <div class="list-in">
+                                    <div class="cam-video">
+                                        <iframe src="https://www.youtube.com/embed/1KCgOEGQ-_k?si=l3TibxDAaJMM9Mgy"
+                                            frameborder="0"></iframe>
+                                    </div>
+                                    <div class="cam-info">
+                                        <div class="cam-info-main">
+                                            <div class="cam-name">
+                                                송도 해수욕장 구역 cctv1-1
+                                            </div>
+                                            <div class="cam-data">
+                                                <div class="collect-count">
+                                                    <span>포집량</span>
+                                                    <span class="num">80</span><span>%</span>
+                                                </div>
+                                                <div class="device-count">
+                                                    <span>연동장치</span>
+                                                    <span class="num">3</span><span>개</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="network-state">
+                                            <span>통신양호</span>
+                                        </div>
+                                    </div>
+                                    <span class="cam-type-tag">VISION</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cam-list">
+                            <a href="">
+                                <div class="list-in">
+                                    <div class="cam-video">
+                                        <iframe src="https://www.youtube.com/embed/1KCgOEGQ-_k?si=l3TibxDAaJMM9Mgy"
+                                            frameborder="0"></iframe>
+                                    </div>
+                                    <div class="cam-info">
+                                        <div class="cam-info-main">
+                                            <div class="cam-name">
+                                                송도 해수욕장 구역 cctv1-1
+                                            </div>
+                                            <div class="cam-data">
+                                                <div class="collect-count">
+                                                    <span>포집량</span>
+                                                    <span class="num">80</span><span>%</span>
+                                                </div>
+                                                <div class="device-count">
+                                                    <span>연동장치</span>
+                                                    <span class="num">3</span><span>개</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="network-state">
+                                            <span>통신양호</span>
+                                        </div>
+                                    </div>
+                                    <span class="cam-type-tag">VISION</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cam-list">
+                            <a href="">
+                                <div class="list-in">
+                                    <div class="cam-video">
+                                        <iframe src="https://www.youtube.com/embed/1KCgOEGQ-_k?si=l3TibxDAaJMM9Mgy"
+                                            frameborder="0"></iframe>
+                                    </div>
+                                    <div class="cam-info">
+                                        <div class="cam-info-main">
+                                            <div class="cam-name">
+                                                송도 해수욕장 구역 cctv1-1
+                                            </div>
+                                            <div class="cam-data">
+                                                <div class="collect-count">
+                                                    <span>포집량</span>
+                                                    <span class="num">80</span><span>%</span>
+                                                </div>
+                                                <div class="device-count">
+                                                    <span>연동장치</span>
+                                                    <span class="num">3</span><span>개</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="network-state">
+                                            <span>통신양호</span>
+                                        </div>
+                                    </div>
+                                    <span class="cam-type-tag">VISION</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cam-list">
+                            <a href="">
+                                <div class="list-in">
+                                    <div class="cam-video">
+                                        <iframe src="https://www.youtube.com/embed/1KCgOEGQ-_k?si=l3TibxDAaJMM9Mgy"
+                                            frameborder="0"></iframe>
+                                    </div>
+                                    <div class="cam-info">
+                                        <div class="cam-info-main">
+                                            <div class="cam-name">
+                                                송도 해수욕장 구역 cctv1-1
+                                            </div>
+                                            <div class="cam-data">
+                                                <div class="collect-count">
+                                                    <span>포집량</span>
+                                                    <span class="num">80</span><span>%</span>
+                                                </div>
+                                                <div class="device-count">
+                                                    <span>연동장치</span>
+                                                    <span class="num">3</span><span>개</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="network-state">
+                                            <span>통신양호</span>
+                                        </div>
+                                    </div>
+                                    <span class="cam-type-tag">VISION</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cam-list">
+                            <a href="">
+                                <div class="list-in">
+                                    <div class="cam-video">
+                                        <iframe src="https://www.youtube.com/embed/1KCgOEGQ-_k?si=l3TibxDAaJMM9Mgy"
+                                            frameborder="0"></iframe>
+                                    </div>
+                                    <div class="cam-info">
+                                        <div class="cam-info-main">
+                                            <div class="cam-name">
+                                                송도 해수욕장 구역 cctv1-1
+                                            </div>
+                                            <div class="cam-data">
+                                                <div class="collect-count">
+                                                    <span>포집량</span>
+                                                    <span class="num">80</span><span>%</span>
+                                                </div>
+                                                <div class="device-count">
+                                                    <span>연동장치</span>
+                                                    <span class="num">3</span><span>개</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="network-state">
+                                            <span>통신양호</span>
+                                        </div>
+                                    </div>
+                                    <span class="cam-type-tag">VISION</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cam-list">
+                            <a href="">
+                                <div class="list-in">
+                                    <div class="cam-video">
+                                        <iframe src="https://www.youtube.com/embed/7iZR4wL4P0Y?si=OwFohdnmRPsVVDyH"
+                                            frameborder="0"></iframe>
+                                    </div>
+                                    <div class="cam-info">
+                                        <div class="cam-info-main">
+                                            <div class="cam-name">
+                                                송도 해수욕장 구역 cctv1-1
+                                            </div>
+                                            <div class="cam-data">
+                                                <div class="collect-count">
+                                                    <span>포집량</span>
+                                                    <span class="num">80</span><span>%</span>
+                                                </div>
+                                                <div class="device-count">
+                                                    <span>연동장치</span>
+                                                    <span class="num">3</span><span>개</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="network-state">
+                                            <span>통신양호</span>
+                                        </div>
+                                    </div>
+                                    <span class="cam-type-tag">LIDAR</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- e. monitoring-cam -->
+
+        <!-- s. 로그아웃 확인 팝업 -->
+        <div class="modal-back"> </div>
+        <div class="modal logout-modal">
+            <div class="mo-content">
+                <div class="modal-title">
+                    로그아웃 하시겠습니까?
+                </div>
+                <span class="modal-close">
+                    <span class="material-icons">
+                        close
+                    </span>
+                </span>
+            </div>
+            <div class="modal-btn">
+                <button class="mo-btn mo-left" type="button">
+                    취소
+                </button>
+                <button class="mo-btn mo-right" type="button">
+                    확인
+                </button>
+            </div>
+        </div>
+        <!-- e. 로그아웃 확인 팝업 -->
+
+    </div>
+
+
+
+</body>
+
+</html>
